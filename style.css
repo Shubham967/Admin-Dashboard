@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-Container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr) repeat(1,4fr);
+    gap: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+ }
+
+ .side-bar {
+    grid-row: 1/4;
+    grid-column: 1;
+    background-color:rgb(0, 183, 255);
+   }
+
+ .Dashboard {
+    font-size: 22px;
+ }
+
+ .Header-Dashboard div,.First-Menu div,.Second-Menu div {
+    display: flex;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;
+ }
+
+ .Header-Dashboard {
+    padding: 10px 0 30px 15px;
+ }
+
+ .First-Menu {
+    padding: 10px 0 30px 15px;
+ }
+
+ .Second-Menu {
+    padding: 10px 0 30px 15px;
+ }
+
+ img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+
+ #bell-icon {
+   height: 22px;
+   width: 25px;
+ }
+
+ .First-Menu,.Second-Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+ }
+
+ .Main {
+   grid-column: 2;
+   grid-row: 1/4;
+   background-color: white;
+   display: grid;
+   grid-template-rows: .5fr .5fr 4fr;
+ }
+ .Header {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   height: 7vh;
+ }
+
+ .Header div {
+   display: flex;
+   align-items: center;
+ }
+
+ .Search-Bar {
+   gap: 20px;
+   padding: 5px 10px 0px 19px;
+ }
+
+ .right-side {
+   gap: 27px;
+   padding: 0px 60px;
+   font-weight: bold;
+ }
+
+ .Header input {
+   border-radius: 15px;
+   width: 38vw;
+   height: 3.5vh;
+   background-color: lightgray;
+ }
+
+ .Nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 10px 10px 40px;
+   font-weight: bold;
+ }
+
+ .Left-Nav {
+   display: flex;
+   gap: 15px;
+   align-items: center;
+ }
+
+ .Welcome {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+ }
+
+ .Nav-Buttons {
+   display: flex;
+   align-items: center;
+   gap: 45px;
+   padding: 0px 60px;
+ }
+
+ button {
+   padding: .6rem 1.7rem;
+   background-color:rgb(0, 183, 255);
+   border-radius: 15px;
+   color: white;
+   border: none;
+   font-weight: bold;
+ }
+
+ #Nav-img {
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+ }
+
+ #Username {
+   font-size: 20px;
+   font-weight: bolder;
+ }
+
+ .Article {
+   grid-column: 1;
+   /* grid-row: 3/4; */
+   background-color: lightgray;
+   display: grid;
+   grid-template-columns: 3fr 1.1fr;
+   grid-template-rows: auto;
+   padding: 1rem 2rem;
+ }
+
+ .card {
+   background-color: white;
+   padding: 5px;
+   border-radius: 10px;
+ }
+
+ .Cards {
+   display: grid;
+   grid-column: 1;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: auto;
+   gap: 15px;
+   padding: 5px 5px 0px 10px;
+}
+
+.Card-title {
+   font-weight: bold;
+   color: black;
+   font-size: 1.2rem;
+   text-align: start;
+}
+
+.Card-Content {
+   color: gray;
+   font-size: 1rem;
+   text-align: start;
+   padding: 15px 20px 35px 15px;
+}
+
+.card-footer {
+   display: flex;
+   justify-content: right;
+   gap: 20px;
+   padding: 10px 30px;
+}
+
+.card-footer img {
+   height: 20px;
+   width: 20px;
+}
+
+#Article-Title,#Side-Title{
+   text-align: left;
+   padding: 5px 0px 0px 20px;
+   font-weight: bold;
+}
+
+#TrendingTitle {
+   text-align: left;
+   font-weight: bold;
+   margin: 5px;
+}
+
+.Side-Cards {
+   display: flex;
+   flex-direction: column;
+   grid-column: 2;
+   grid-template-rows: auto;
+   /* grid-row: 2/4; */
+   padding: 5px;
+   gap: 1rem;
+}
+
+.AnnounceMent-Card {
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   border-radius: 10px;
+   padding: 30px;
+   flex-grow: 1;
+}
+
+.ATitle {
+   color: black;
+   font-weight: bold;
+   text-align: start;
+   font-size: 1rem;
+}
+
+.AContent {
+   text-align: start;
+   color: gray;
+   font-size: .8rem;
+}
+
+.TrendingContent {
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   align-items: center;
+   padding: 1rem 2rem;
+   border-radius: 10px;
+}
+
+.item {
+   display: flex;
+   gap: 10px;
+   text-align: start;
+   align-items: center;
+   padding: 10px;
+}
+
+.item img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+#img-Des {
+   color: gray;
+   font-size: 1rem;
+}
